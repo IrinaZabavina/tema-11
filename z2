@@ -1,0 +1,9 @@
+def func(a,b):
+    from itertools import chain
+    c=chain(a,b)
+    return c
+
+def out_spisok(a):
+    print(list(a))
+
+out_spisok(func([1,2],[3,4]))
