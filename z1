@@ -1,0 +1,11 @@
+def func(n): #функция-генератор
+    from random import uniform
+    a=[]
+    for i in range(0,n):
+        a.append(uniform(0,n))
+    return a #минимальный, максимальный пороги
+
+def list(a): #функция вывода
+    print(a)
+
+list(func(3))
